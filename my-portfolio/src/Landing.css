@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+.landing-container {
+    background: url('./Images/Group 5.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Welcome Text Animation */
+.welcome-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "League Gothic", serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s ease-in 1s forwards;
+}
+
+/* Portfolio Text Animation */
+.portfolio-text {
+    font-family: "Licorice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #870034;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInSlide 3s ease-in 2s forwards;
+}
+
+/* Define Keyframes */
+@keyframes fadeIn {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
